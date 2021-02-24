@@ -1,7 +1,8 @@
 <template>
     <div id="app" class="container">
         <Header />
-        <Home  />
+        <!--<Home  />-->
+        <router-view></router-view>
         <Footer />
     </div>
 </template>
@@ -28,6 +29,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+        background-attachment: fixed;
     }
 </style>
 

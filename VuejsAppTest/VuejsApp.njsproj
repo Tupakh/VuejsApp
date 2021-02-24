@@ -33,6 +33,15 @@
     <Content Include="public\favicon.ico" />
     <Content Include="public\index.html" />
     <Content Include="src\App.vue" />
+    <Content Include="src\components\Contact.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\FavMovie.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Favorite.vue">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\components\Footer.vue">
       <SubType>Code</SubType>
     </Content>
@@ -42,6 +51,15 @@
     <Content Include="src\components\Home.vue" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\components\MovieDetails.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Popular.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\router\index.js">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dist\" />
@@ -49,6 +67,7 @@
     <Folder Include="src\" />
     <Folder Include="src\assets\" />
     <Folder Include="src\components\" />
+    <Folder Include="src\router\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="babel.config.js" />
