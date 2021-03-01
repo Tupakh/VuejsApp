@@ -1,7 +1,7 @@
 <template>
     <div class="movie_details">
-        <div v-if="loading" class="loading">
-            Loading...
+        <div v-if="loading" >
+            <Loading />
         </div>
         <div v-else class="card bg-dark text-white">
             <img :alt="movie.title"
@@ -36,6 +36,7 @@
 
 <script>
     import moment from 'moment';
+    import Loading from './Loading.vue';
 
     export default {
         name: 'MovieDetails',
@@ -61,16 +62,17 @@
                     }
                     this.movie = data;
                     this.loading = false;
-                    console.log("MovieDetails", this.movie);
+                    //console.log("MovieDetails", this.movie);
                 })
                 .catch(error => console.log("There was an error!", error.message));
         },
         components: {
+            Loading
         },
         methods: {
             format_date(value) {
                 if (value) {
-                    return moment(String(value)).format("ll");
+                    return moment(String(value)).format("YYYY");
                 }
             },
         },
@@ -88,10 +90,11 @@
 
     .card {
         border-radius: 0;
+        border: 0;
     }
     .card-img-overlay {
         border-radius: 0;
-        background-image: linear-gradient(to right, rgba(16.47%, 15.29%, 14.51%, 1.00) 150px, rgba(22.35%, 22.35%, 22.35%, 0.84) 100%);
+        background-image: linear-gradient(to right, rgba(16.47%, 15.29%, 14.51%, 1.00) 150px, rgba(22.35%, 22.35%, 22.35%, 0.54) 100%);
     }
 
     h2 span.release_date {

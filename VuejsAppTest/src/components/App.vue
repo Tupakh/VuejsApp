@@ -31,40 +31,28 @@
         background-size: cover;
         background-attachment: fixed;
     }
-    #app {
-        min-height: calc(100vh - 120px);
-        position: relative;
-    }
-    footer {
-        position: absolute;
-        bottom: -120px;
-        display: block;
-        width: 100%;
-    }
     h1.titlePage {
         color: white;
     }
-    .card {
+    .card:hover {
         border: none;
     }
+
     .card > a:hover {
         text-decoration: none;
         color: inherit;
     }
 
     .card > a {
-        /*background-color: unset !important;*/
+        background-color: unset !important;
         color: unset !important;
     }
 
     .box-shadow {
         position: relative;
         height: calc(100% - 1rem);
+        overflow: hidden;
         box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
     }
-    .box-shadow:hover {
-        box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
-    }
-
 </style>
 

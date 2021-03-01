@@ -33,6 +33,10 @@
     <Content Include="public\favicon.ico" />
     <Content Include="public\index.html" />
     <Content Include="src\App.vue" />
+    <Content Include="src\components\AlertFav.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\App.vue" />
     <Content Include="src\components\Contact.vue">
       <SubType>Code</SubType>
     </Content>
@@ -51,12 +55,19 @@
     <Content Include="src\components\Home.vue" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\components\Loading.vue" />
+    <Content Include="src\components\main.js" />
     <Content Include="src\components\MovieDetails.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Pagination.vue">
       <SubType>Code</SubType>
     </Content>
     <Content Include="src\components\Popular.vue">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="src\components\SearchForm.vue" />
+    <Content Include="src\components\SearchPage.vue" />
     <Content Include="src\router\index.js">
       <SubType>Code</SubType>
     </Content>
